@@ -22,7 +22,7 @@ class ContactEntryModel(rx.Model, table=True):
         sa_column_kwargs={
             "server_default": sqlalchemy.func.now(),
         },
-        nullable=False,
+        nullable=False
     )
 
 
