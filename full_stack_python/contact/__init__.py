@@ -8,3 +8,4 @@ __all__ = [
     'contact_page',
     'contact_entries_list_page'
 ]
+
