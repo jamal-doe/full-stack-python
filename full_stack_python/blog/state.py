@@ -1,6 +1,6 @@
 # from datetime import datetime
-# from typing import Optional, List
-# import reflex as rx
+from typing import Optional, List
+import reflex as rx
 #
 # import sqlalchemy
 # from sqlmodel import select
@@ -8,15 +8,16 @@
 # from .. import navigation
 # from ..auth.state import SessionState
 # from ..models import BlogPostModel, UserInfo
+from .model import BlogPostModel
 
 # BLOG_POSTS_ROUTE = navigation.routes.BLOG_POSTS_ROUTE
 # if BLOG_POSTS_ROUTE.endswith("/"):
 #     BLOG_POSTS_ROUTE = BLOG_POSTS_ROUTE[:-1]
-#
-#
-# class BlogPostState(SessionState):
-#     posts: List['BlogPostModel'] = []
-#     post: Optional['BlogPostModel'] = None
+
+
+class BlogPostState(SessionState):
+    posts: List['BlogPostModel'] = []
+    post: Optional['BlogPostModel'] = None
 #     post_content: str = ""
 #     post_publish_active: bool = False
 #
